@@ -5,7 +5,7 @@ const path=require("path")
 const candidateModel = require('./userModel'); 
 
 const app = express();
-const port = 5000;
+const  port=process.env.port||5000
 
 // Use CORS middleware
 app.use(cors());
